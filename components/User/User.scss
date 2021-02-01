@@ -1,0 +1,35 @@
+.users {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.user {
+  &__item {
+    padding: 1rem;
+
+    text-align: center;
+    list-style-type: none;
+  }
+
+  &__img {
+    width: 100%;
+    
+    transition: transform 0.3s ease;
+    box-shadow: 0px 0px 10px 0px #000;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &-container {
+      width: 250px;
+      padding: 1rem;
+    }
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+}
